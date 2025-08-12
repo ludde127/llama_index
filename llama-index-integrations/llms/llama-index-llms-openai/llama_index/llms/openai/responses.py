@@ -654,7 +654,7 @@ class OpenAIResponses(FunctionCallingLLM):
                     current_tool_call,
                     local_previous_response_id,
                     delta,
-                ) = OpenAIResponses.process_response_event(
+                ) = self.process_response_event(
                     event=event,
                     tool_calls=tool_calls,
                     built_in_tool_calls=built_in_tool_calls,
@@ -780,7 +780,7 @@ class OpenAIResponses(FunctionCallingLLM):
                     current_tool_call,
                     local_previous_response_id,
                     delta,
-                ) = OpenAIResponses.process_response_event(
+                ) = self.process_response_event(
                     event=event,
                     tool_calls=tool_calls,
                     built_in_tool_calls=built_in_tool_calls,
